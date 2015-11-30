@@ -11,33 +11,61 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
 }
 
+html {
+ box-sizing: border-box;
+}
+​*, *​:before, *:after {
+ box-sizing: inherit;
+}
+
+body {
+    background: #eee;
+}
 /*colors*/
 /*black
 white
-red*/
-
+red = #be3624*/
+body{
+	width: 1020px;
+	margin: 0px auto;
+}
+#header{
+	font-family: arial;
+}
 #score_ticker a, #score_ticker ul{
 	display: inline-block;
 	vertical-align: top;
 }
-
+#score_ticker a{
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	padding: 0px 10px;
+}
 #score_ticker li{
 	display: inline-block;
 	vertical-align: top;
 }
-
+#score_ticker ul{
+	background-color: white;
+}
 #score_ticker{
+	font-size: .8em;
 	background-color: #EEEEEE;
 }
-
+#score_ticker li{
+	border-left: 1px solid black;
+	padding: 5px 10px;
+}
+/*end of header*/
 #navbar{
 	background-color: black;
 	color: white;
@@ -53,16 +81,22 @@ red*/
 
 #navbar li{
 	display: inline-block;
+	margin-left: 10px;
 }
 #navbar ul{
 	position: relative;
-	top: 10px;
+	top: 16px;
 }
 #home_link{
-	background-color: red;
+	background-color: #be3624;
 	padding: 10px 10px 10px 10px;
+	font-size: 1.5em;
+}
+#right_nav{
+	position: absolute;
+	right: 20px;
 }
 #left_nav{
-	margin: 0px 200px 0px 0px;
+	margin: 0px 250px 0px 0px;
 }
 
