@@ -1,0 +1,17 @@
+*{
+	padding: 0px;
+	width: 0px
+}
+header{
+	background-color: red;
+}
+
+#score_ticker a, #score_ticker ul{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#score_ticker li{
+	display: inline-block;
+	vertical-align: top;
+}
